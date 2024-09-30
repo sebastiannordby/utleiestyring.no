@@ -1,5 +1,3 @@
-import React from "react";
-
 const detailedFeatures = [
   "Full kontroll over dine verktøy og eiendeler. Hold oversikt over hvem som har lånt hva, og når det skal tilbakeleveres – alt i sanntid.",
   "Systemet er skreddersydd for en effektiv arbeidshverdag. Med et brukervennlig grensesnitt for både PC og berøringsskjerm, administrerer du enkelt utleie og vedlikehold uansett hvor du er.",
