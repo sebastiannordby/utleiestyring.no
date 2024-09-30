@@ -32,7 +32,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="utleiestyring-bg py-12 min-h-[400px] text-center mb-12 p-4 mt-36">
+      <section className="utleiestyring-bg py-12 min-h-[400px] text-center mb-12 p-4 pt-36">
         <h2 className="text-3xl font-bold mb-4">
           Velkommen til Fremtiden av Verktøyutleie
         </h2>
