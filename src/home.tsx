@@ -32,33 +32,39 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="utleiestyring-bg py-12 min-h-[400px] text-center mb-12 p-4 pt-36">
-        <h2 className="text-3xl font-bold mb-4">
-          Velkommen til Fremtiden av Verktøyutleie
-        </h2>
-        <p className="text-base mb-6">
-          <span className="font-semibold">Spar tid. Spar penger.</span> Effektiv
-          verktøyutleie, skreddersydd for din bedrift.
-        </p>
-        <a
-          href="#demo"
-          className="bg-utleiestyring_primary whitespace-pre text-white rounded-full px-6 py-3 text-base font-semibold hover:bg-utleiestyring_accent transition duration-300"
+      <section className="utleiestyring-bg min-h-[400px] mb-12 flex flex-col">
+        <div
+          className="backdrop-blur-[3px] p-4 py-12 pt-36 text-white text-center flex-1"
+          style={{ background: "rgb(0 0 0 / 35%)" }}
         >
-          Start Gratis Prøveperiode
-        </a>
+          <h2 className="text-3xl font-bold mb-4">
+            Velkommen til Fremtiden av Verktøyutleie
+          </h2>
+          <p className="text-base mb-6">
+            <span className="font-semibold">Spar tid. Spar penger.</span>{" "}
+            Effektiv verktøyutleie, skreddersydd for din bedrift.
+          </p>
+          <a
+            href="#demo"
+            className="bg-utleiestyring_primary whitespace-pre text-white rounded-full px-6 py-3 text-base font-semibold hover:text-utleiestyring_primary hover:bg-white hover:border-utleiestyring_dark hover:border  transition duration-300"
+          >
+            Start Gratis Prøveperiode
+          </a>
+        </div>
       </section>
 
       {/* Feature Summary Section */}
-      <section
-        id="discover"
-        className="mb-12 polka-bg rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 gap-8"
-      >
-        {featureSummary.map((feature, index) => (
-          <div key={index} className="p-4">
-            <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-            <p className="text-sm">{feature.description}</p>
-          </div>
-        ))}
+      <section id="discover" className="mb-12 polka-bg rounded-lg p-4">
+        <h2 className="text-2xl font-bold">Hvorfor velge oss?</h2>
+
+        <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {featureSummary.map((feature, index) => (
+            <div key={index} className="p-4">
+              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+              <p className="text-sm">{feature.description}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Detailed Features Section */}
@@ -71,7 +77,7 @@ export default function HomePage() {
             {text}
           </p>
         ))}
-        <a className="inline-block cursor-pointer bg-utleiestyring_primary text-white rounded-full px-8 py-3 text-base font-semibold hover:bg-utleiestyring_accent transition duration-300">
+        <a className="inline-block cursor-pointer bg-utleiestyring_primary text-white rounded-full px-8 py-3 text-base font-semibold hover:border-1 hover:text-utleiestyring_primary hover:bg-white hover:border-utleiestyring_dark transition duration-300">
           Les mer<span className="hidden md:inline"> om funksjonene</span>
         </a>
       </section>
@@ -103,7 +109,7 @@ export default function HomePage() {
           />
           <button
             type="submit"
-            className="bg-utleiestyring_primary text-white rounded-full px-8 py-3 text-base font-semibold hover:bg-utleiestyring_accent transition duration-300"
+            className="inline-block cursor-pointer bg-utleiestyring_primary text-white rounded-full px-8 py-3 text-base font-semibold hover:text-utleiestyring_primary hover:bg-white hover:border-utleiestyring_dark transition duration-300"
           >
             Send Melding
           </button>

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <header className="bg-white dark:bg-gray-900 fixed top-0 right-0 left-0">
+      <header className="bg-white dark:bg-gray-900 w-full">
         <nav className="p-4 flex flex-wrap justify-between items-center max-w-7xl mx-auto">
           <div className="flex items-center justify-between w-full md:w-auto">
             <h1 className="font-bold text-xl">Utleiestyring</h1>
